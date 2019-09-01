@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../webicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <link href="../vendor/foundation.css" rel="stylesheet" type="text/css" />
+    <link href="../vendor/twentytwenty.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Cabinet Painting</title>
+</head>
+
+<body>
+
+    <div id="wrapper container">
+        <section class="top">
+            <div id="menu">
+                <img src="/picture/logo.png" alt="Kitchen Update" id="logo" onclick="location.href='/'">
+                <h2>301-909-3404</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="row" style="margin-top: 2em;">
+                <div class="columns">
+                    <div class="twentytwenty-container">
+                        <img src="../picture/cabinet/4a.jpg" />
+                        <img src="../picture/cabinet/4b.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <section id="cntl_btns">
+                <button type="button" class="btn btn-outline-warning" onclick="location.href='./img3.html'">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </button>
+                <button type="button" class="btn btn-outline-warning" onclick="location.href='../cabinet.html'">
+                    <i class="fas fa-home"></i>
+                </button>
+                <button type="button" class="btn btn-outline-warning" onclick="location.href='./img5.html'">
+                    <i class="fas fa-chevron-circle-right"></i>
+                </button>
+        </section>
+
+        <footer class="d-flex justify-content-center" id="bfooter">
+            <p>@Kitchen Update 2019</p>
+            <i class="fab fa-facebook-square" onclick="location.href='https://www.facebook.com'"></i>
+            <i class="fab fa-instagram" onclick="location.href='https://www.instagram.com/'"></i>
+            <i class="fab fa-twitter" onclick="location.href='https://twitter.com/'"></i>
+            <i class="fab fa-houzz" onclick="location.href='https://www.houzz.com/'"></i>
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+
+    <script src="../vendor/jquery.event.move.js"></script>
+    <script src="../vendor/jquery.twentytwenty.js"></script>
+    <script>
+        $(function(){
+        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+        $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+        });
+    </script>
+
+</body>
+</html>

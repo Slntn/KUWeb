@@ -1,0 +1,52 @@
+/*screen resolution*/
+$break-xsmall: 320px;
+$break-medium: 768px;
+$break-large: 1024px;
+$break-Xlarge: 1250px;
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$break-xsmall}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+@mixin md {
+    @media (min-width: #{$break-medium}) {
+        @content;
+    }
+}
+ 
+ // Large devices
+@mixin lg {
+    @media (min-width: #{$break-large}) {
+        @content;
+    }
+}
+
+// XLarge devices
+ @mixin Xlg {
+    @media (min-width: #{$break-Xlarge}) {
+        @content;
+    }
+}
+
+#logo {
+    width: 150px;
+}
+
+#bfooter{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#cntl_btns{
+    display: flex;
+    justify-content: center;
+    button{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

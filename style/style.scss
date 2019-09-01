@@ -1,0 +1,159 @@
+@import './common.scss';
+
+@mixin displayRow{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin mainbackground {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../picture/1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../picture/1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    @include mainbackground;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h2{
+        color: red;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+}
+
+#main {
+    height: 88vh;
+    @include sm {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 200px;
+            border-radius: 3px;
+            margin-top: 15px;
+        }  
+    } 
+
+    @include md {
+        @include displayRow;
+        img {
+            width: 200px;
+            border-radius: 3px;
+            margin-top: 90px;
+        }  
+    } 
+
+    @include lg {
+        @include displayRow;
+        img {
+            width: 300px;
+            border-radius: 3px;
+            margin-top: 100px;
+        }
+        :hover{
+            transform: scale(1.2, 1.2);
+        }  
+    } 
+}
+
+footer{
+    *{
+        margin-top: -13px;
+        margin-right: 5px;
+     }
+    color:yellow;  
+}
+
+
+//cabinet painting page
+#msg{
+    height: 450px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: yellow;
+    
+}
+
+#cabinet_pics{
+    background-color: white;
+    
+}
+#cabinet_footer{
+    @include mainbackground;
+}
+
+.c1 {
+    padding: 15px;
+
+}
+
+
+//kitchin
+@mixin m1{
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selections{
+    @include sm {
+        @include m1;
+        img {
+            width: 80px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        }  
+    } 
+
+    @include md {
+        @include m1;
+        img {
+            width: 200px
+        }  
+    } 
+
+    @include lg {
+        @include m1;
+        img {
+            width: 300px;
+        }
+    } 
+}
+
+.brands{
+    width: 350px;
+    color: white;
+    border: 2px solid yellow;
+    margin: 10px;
+
+    @include sm { 
+        margin-top: 0px;
+        width: 130px; 
+        h2{ 
+            font-size: 0.7rem; 
+            margin-bottom: 0px;
+        }
+    } 
+    @include md { 
+        margin-top: 0px;
+        width: 180px; 
+        h2{ 
+            font-size: 1rem; 
+            margin-bottom: 0px;
+        }
+    } 
+    @include lg { 
+        width: 350px; 
+        h2{ font-size: 2rem; }
+    } 
+}
