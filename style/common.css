@@ -1,6 +1,6 @@
 /*screen resolution*/
 #logo {
-  width: 150px;
+  width: 350px;
 }
 
 #bfooter {
@@ -21,5 +21,13 @@
 #cntl_btns button {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+#contact_icon {
+  height: 10%;
+  position: fixed;
+  bottom: 60%;
+  left: 90%;
+  text-align: center;
 }
 /*# sourceMappingURL=common.css.map */

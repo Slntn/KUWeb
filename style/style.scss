@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 200px;
 
     h2{
         color: red;
@@ -31,7 +32,6 @@ body {
 }
 
 #main {
-    height: 88vh;
     @include sm {
         flex-direction: column;
         align-items: center;
@@ -39,25 +39,25 @@ body {
         img {
             width: 200px;
             border-radius: 3px;
-            margin-top: 15px;
+            margin-bottom: 50px;
         }  
     } 
 
     @include md {
         @include displayRow;
+        margin-top: 150px;
         img {
             width: 200px;
             border-radius: 3px;
-            margin-top: 90px;
         }  
     } 
 
     @include lg {
         @include displayRow;
+        margin-top: 200px;
         img {
             width: 300px;
             border-radius: 3px;
-            margin-top: 100px;
         }
         :hover{
             transform: scale(1.2, 1.2);
@@ -65,9 +65,9 @@ body {
     } 
 }
 
+
 footer{
     *{
-        margin-top: -13px;
         margin-right: 5px;
      }
     color:yellow;  
@@ -102,26 +102,29 @@ footer{
 @mixin m1{
     height: 80%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin m2{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .selections{
+    margin-top:10%;
     @include sm {
-        @include m1;
+        @include m2;
         img {
-            width: 80px;
+            width: 300px;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+            margin-bottom: 30px;
         }  
     } 
-
-    @include md {
-        @include m1;
-        img {
-            width: 200px
-        }  
-    } 
-
     @include lg {
         @include m1;
         img {
@@ -157,3 +160,4 @@ footer{
         h2{ font-size: 2rem; }
     } 
 }
+

@@ -33,7 +33,7 @@ $break-Xlarge: 1250px;
 }
 
 #logo {
-    width: 150px;
+    width: 350px;
 }
 
 #bfooter{
@@ -49,4 +49,12 @@ $break-Xlarge: 1250px;
         margin-left: 15px;
         margin-right: 15px;
     }
+}
+
+#contact_icon{
+    height: 10%;
+    position: fixed;
+    bottom: 60%;
+    left: 90%;
+    text-align: center;
 }
