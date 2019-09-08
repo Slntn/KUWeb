@@ -242,7 +242,17 @@ footer * {
   font-size: 75px;
 }
 
-#kitchen_mdg span {
+#kitchen_mdg h1 span {
   color: yellow;
+}
+
+#kitchen_mdg h2 {
+  text-align: center;
+  font-size: 45px;
+}
+
+#kitchen_mdg h2 span {
+  color: #EB5905;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
