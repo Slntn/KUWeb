@@ -53,10 +53,26 @@ body {
   height: 200px;
 }
 
-#menu h2 {
+#menu .r_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#menu .r_menu h2 {
   color: #EB5905;
   margin-top: 15px;
   margin-right: 15px;
+}
+
+#menu .r_menu button {
+  margin-top: 15px;
+  margin-right: 15px;
+  height: 36px;
 }
 
 @media (min-width: 320px) {
@@ -256,6 +272,11 @@ footer * {
   cursor: pointer;
 }
 
+.hbox {
+  color: #EB5905;
+  text-align: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -344,5 +365,9 @@ footer * {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.carousel-inner img {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
