@@ -370,4 +370,37 @@ footer * {
 .carousel-inner img {
   margin: auto;
 }
+
+.dark {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.cust_block {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.custom_main_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.custom_bottom .info_block {
+  width: 45%;
+}
+
+.custom_bottom .info_block img {
+  width: 100%;
+}
+
+.custom_bottom h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
