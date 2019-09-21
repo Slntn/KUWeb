@@ -26,7 +26,7 @@
             </button>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="/">Home</a>
-                <a class="dropdown-item" href="#">About Us</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#aboutUs">About Us</a>
                 <a class="dropdown-item" href="./gallery.html">Gallery</a>
             </div>
         </div>
@@ -82,7 +82,29 @@
         </div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal fade" id="aboutUs" tabindex="-1" role="dialog" aria-labelledby="aboutUsTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="aboutUsTitle">About Us</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <span>
+                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                        The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's 
+                        De Finibus Bonorum et Malorum for use in a type specimen book.
+                  </span>
+                </div>
+              </div>
+            </div>
+        </div>
+
 </body>
+</html>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
