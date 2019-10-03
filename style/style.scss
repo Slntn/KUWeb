@@ -7,8 +7,8 @@
 }
 
 @mixin mainbackground {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../picture/1.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../picture/1.png");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -23,6 +23,10 @@ body {
     flex-direction: row;
     justify-content: space-between;
     height: 200px;
+
+    h2{
+        color: $color_1; 
+    }
 
     .r_menu{
         display: flex;
@@ -41,7 +45,12 @@ body {
         }
     }
 
-    
+    .dropdown-menu{
+        background-color: yellow;
+        :hover{
+            background-color: $color_1;
+        }
+    }
 }
 
 #main {
