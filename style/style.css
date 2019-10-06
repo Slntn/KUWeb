@@ -442,8 +442,12 @@ footer * {
       justify-content: space-around;
 }
 
+.custom_bottom {
+  background: white;
+}
+
 .custom_bottom .info_block {
-  width: 45%;
+  width: 35%;
 }
 
 .custom_bottom .info_block img {
