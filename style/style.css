@@ -428,6 +428,11 @@ footer * {
   padding-left: 5%;
 }
 
+.ef:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
 .custom_main_block {
   display: -webkit-box;
   display: -ms-flexbox;
