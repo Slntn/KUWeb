@@ -35,4 +35,8 @@
   color: yellow;
   border-color: yellow;
 }
+
+.pointer {
+  cursor: pointer;
+}
 /*# sourceMappingURL=common.css.map */
