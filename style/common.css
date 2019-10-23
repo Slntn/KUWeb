@@ -39,4 +39,11 @@
 .pointer {
   cursor: pointer;
 }
+
+#policy {
+  background-color: white;
+  width: 85%;
+  margin: auto;
+  padding: 15px;
+}
 /*# sourceMappingURL=common.css.map */

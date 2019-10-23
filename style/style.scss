@@ -70,7 +70,7 @@ body{
     }
 
     .dropdown-menu{
-        background-color: yellow;
+        background-color: white;
         :hover{
             background-color: $color_1;
         }
@@ -116,7 +116,8 @@ footer{
     *{
         margin-right: 5px;
      }
-    color:white;  
+    color:$color_1; 
+    
 }
 
 
