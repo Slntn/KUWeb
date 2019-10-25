@@ -2,6 +2,14 @@
   color: yellow;
 }
 
+.txt-c1 {
+  color: #EB5905;
+}
+
+.bg_color1 {
+  background: #EB5905;
+}
+
 /*screen resolution*/
 #logo {
   width: 350px;
@@ -191,7 +199,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 200px;
+    margin-top: 150px;
   }
   #main img {
     width: 300px;

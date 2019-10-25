@@ -2,6 +2,14 @@
   color: yellow;
 }
 
+.txt-c1 {
+  color: #EB5905;
+}
+
+.bg_color1 {
+  background: #EB5905;
+}
+
 /*screen resolution*/
 #logo {
   width: 350px;

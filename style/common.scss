@@ -4,6 +4,14 @@ $color_1:#EB5905;
     color: yellow;
 }
 
+.txt-c1{
+    color: $color_1;
+}
+
+.bg_color1{
+    background: $color_1;
+}
+
 /*screen resolution*/
 $break-xsmall: 320px;
 $break-medium: 768px;
