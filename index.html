@@ -106,23 +106,36 @@
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <form id="contact-form" method="post" action="contact.php" role="form">
-
-                        <div class="messages"></div>
-                    
-                        <div class="controls">
-                    
+                        <div class="messages"></div>                   
+                        <div class="controls">       
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_name"><b>First name *</b></label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="Firstname is required.">
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="First name is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_lastname"><b>Last name *</b></label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Lastname is required.">
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_city"><b>City *</b></label>
+                                        <input id="form_city" type="text" name="city" class="form-control" placeholder="Please enter your city *" required="required" data-error="City is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_zip"><b>Zip code *</b></label>
+                                        <input id="form_zip" type="text" name="zip" class="form-control" placeholder="Please enter your zip code *" required="required" data-error="Zip code is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -161,18 +174,14 @@
                                     <input type="submit" class="btn bg_color1 btn-send float-right" value="Send message">
                                 </div>
                             </div>
-                        </div>
-                    
+                        </div>               
                     </form>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                   
                     <form id="contact-form" method="post" action="contact.php" role="form">
-
                         <div class="messages"></div>
-                    
                         <div class="controls">
-                    
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -185,6 +194,22 @@
                                     <div class="form-group">
                                         <label for="form_lastname"><b>Last name *</b></label>
                                         <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_city"><b>City *</b></label>
+                                        <input id="form_city" type="text" name="city" class="form-control" placeholder="Please enter your city *" required="required" data-error="City is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_zip"><b>Zip code *</b></label>
+                                        <input id="form_zip" type="text" name="zip" class="form-control" placeholder="Please enter your zip code *" required="required" data-error="Zip code is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -211,7 +236,6 @@
                                 </div>
                             </div>
                         </div>
-                    
                     </form>
 
                 </div>

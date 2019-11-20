@@ -10,8 +10,10 @@
     $from = $_POST['email'];
     $sbj = $_POST['need'];
     $msg = $_POST['message'];
+    $city = $_POST['city'];
+    $zip = $_POST['zip'];
 
-    $message = "Name: $last_name,  $first_name. Message: $msg  \n\n Info: $from Phone: $phone Subj: $sbj"; 
+    $message = "Name: $last_name,  $first_name. Message: $msg  \n\n Info: $from Phone: $phone Subj: $sbj \n\n $city - $zip"; 
 
     //send email
     mail($to, $subject, $message);
