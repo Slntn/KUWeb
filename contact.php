@@ -1,6 +1,6 @@
 <?php 
 
-    $to = "slntn@yahoo.com"; // to email
+    $to = "info@kitchen-update.com"; // to email
     $subject = "Form Request";
 
     //form data

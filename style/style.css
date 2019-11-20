@@ -1,3 +1,7 @@
+*{
+    font-family: 'Questrial', sans-serif;
+}
+
 .text-yellow {
   color: yellow;
 }
@@ -22,6 +26,8 @@
 }
 
 #cntl_btns {
+  margin-top: -80px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +146,7 @@ body {
 }
 
 #menu .dropdown-menu {
-  background-color: white;
+  background-color: silver;
 }
 
 #menu .dropdown-menu :hover {
