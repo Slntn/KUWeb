@@ -1,5 +1,18 @@
 @import './common.scss';
 
+@font-face {
+    font-family: myFont1;
+    src: url('../fonts/Arvo-Regular.ttf');
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url('../fonts/norwester.otf');
+}
+
+.f1{ font-family: myFont1; }
+.f2{ font-family: myFont2; }
+
 @mixin displayRow{
     flex-direction: row;
     align-items: center;
@@ -12,6 +25,8 @@
     background-attachment: fixed;
 }
 
+* { font-family: myFont1; }
+
 body{
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/1.png");
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/1.png");
@@ -19,6 +34,7 @@ body{
 }
 
 #b1 {
+    font-family: myFont1;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/1.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/1.jpg");
     @include mainbackground;
@@ -201,6 +217,7 @@ footer{
         font-size: 75px;
         span{
             color: yellow;
+            font-family:myFont2;
         }
     }
     
@@ -213,6 +230,21 @@ footer{
         }
     }
 }
+
+#kitchen_mdg1{
+    color: white;
+    margin: auto;
+    
+    h2{
+        text-align:center;
+        font-size: 35px;
+        span {
+            color: $color_1; 
+        }
+    }
+}
+
+
 
 .hbox{
     color: $color_1;
