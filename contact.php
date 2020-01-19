@@ -13,6 +13,17 @@
     $city = $_POST['city'];
     $zip = $_POST['zip'];
 
+    // VALIDATION ON EXPECTED DATA
+    if( 
+        !isset($_POST['name']) ||
+        !isset($_POST['surname']) ||
+        !isset($_POST['city']) ||
+        !isset($_POST['zip']) ||
+        !isset($_POST['message'])
+    ){ 
+    died('We are sorry, but there appears to be a problem with the form you submitted.');
+    }
+
     $message = "Name: $last_name,  $first_name. Message: $msg  \n\n Info: $from Phone: $phone Subj: $sbj \n\n $city - $zip"; 
 
     //send email
@@ -27,7 +38,5 @@
     echo 'window.history.back()';
     echo '</script>';
     
-    
     exit;
-    
 ?>    

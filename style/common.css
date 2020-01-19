@@ -58,4 +58,9 @@
   margin: auto;
   padding: 15px;
 }
+
+.txt_center {
+  margin: auto;
+  text-align: center;
+}
 /*# sourceMappingURL=common.css.map */

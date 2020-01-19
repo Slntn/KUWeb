@@ -59,6 +59,11 @@
   padding: 15px;
 }
 
+.txt_center {
+  margin: auto;
+  text-align: center;
+}
+
 @font-face {
   font-family: myFont1;
   src: url("../fonts/Arvo-Regular.ttf");
@@ -522,8 +527,42 @@ footer * {
 }
 
 .panel {
-  background-color: #fbff00;
-  opacity: .4;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 236, 10, 0.6)));
+  background: linear-gradient(rgba(252, 236, 10, 0.6));
   height: 100vh;
+}
+
+.uploadBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.uploadBtn input {
+  margin-left: 30%;
+}
+
+.uploadCtrBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.uploadCtrBtn button {
+  width: 80px;
+  margin-right: 3%;
+  margin-left: 3%;
 }
 /*# sourceMappingURL=style.css.map */
