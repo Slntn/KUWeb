@@ -461,6 +461,9 @@ footer{
         background-color: black;
         color:white;
         text-align: center;
+        @include sm{ font-size: 12px; }
+        @include md{ font-size: 26px; }
+        @include lg{ font-size: 45px; }
     }
 } 
 

@@ -61,6 +61,11 @@ $break-Xlarge: 1250px;
     }
 }
 
+footer{
+    @include sm { font-size: 0.5rem; }
+    @include md { font-size: 1rem; }
+}
+
 #bfooter{
     position: fixed;
     bottom: 0;
