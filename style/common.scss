@@ -23,7 +23,7 @@ $break-Xlarge: 1250px;
     @media (min-width: #{$break-xsmall}) {
         @content;
     }
- }
+}
  
  // Medium devices
 @mixin md {
@@ -46,8 +46,19 @@ $break-Xlarge: 1250px;
     }
 }
 
-#logo {
-    width: 350px;
+#logo { 
+    @include sm { 
+        width: 130px; 
+        height: 100px;
+    }
+    @include md { 
+        width: 300px; 
+        height: 200px;
+    }
+    @include lg { 
+        width: 350px; 
+        height: 200px;
+    }
 }
 
 #bfooter{
@@ -69,8 +80,11 @@ $break-Xlarge: 1250px;
     height: 10%;
     position: fixed;
     bottom: 80%;
-    left: 87%;
-    text-align: center;
+    
+    @include sm { left: 70%; }
+    @include md { left: 80%; }
+    @include lg { left: 85%; }
+    @include Xlg {left: 87%; }
 }
 
 .btn-outline-warning {
