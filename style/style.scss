@@ -34,7 +34,6 @@ body{
 }
 
 #b1 {
-    font-family: myFont1;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/1.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/1.jpg");
     @include mainbackground;
@@ -321,8 +320,8 @@ footer{
 #kitch_get_quote_btn{
     margin-top: 5%;
     @include sm{ img { width:200px; } }
-    @include md{ img { width:400px; } }
-    @include lg{ img { width:600px; } }
+    @include md{ img { width:300px; } }
+    @include lg{ img { width:400px; } }
 }
 
 
@@ -477,9 +476,6 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
-    input{
-        margin-left: 30%;
-    }
 }
 
 .uploadCtrBtn{
