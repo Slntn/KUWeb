@@ -9,6 +9,8 @@ $fromName = $_POST['fname'];
 $fromLName = $_POST['lname']; 
 $email = $_POST['email']; 
 $phone = $_POST['phone'];
+$city = $_POST['city']; 
+$zip = $_POST['zip'];
 $msg = $_POST['msg'];
 $uploads = $_FILES['files'];
 
@@ -17,13 +19,15 @@ if( !isset($_POST['fname']) ||
     !isset($_POST['lname']) ||
     !isset($_POST['email']) ||
     !isset($_POST['phone']) ||
+    !isset($_POST['city']) ||
+    !isset($_POST['zip']) ||
     !isset($_POST['msg']) ||
     !isset($_FILES['files']) 
 ){ 
     died('We are sorry, but there appears to be a problem with the form you submitted.');
 }
 
-$message = "Name: $fromLName,  $fromName . Message: $msg  \r\n Phone: $phone Email: $email";
+$message = "Name: $fromLName,  $fromName . Message: $msg  \r\n Phone: $phone Email: $email City: $city Zip: $zip";
 
 $mail = new PHPMailer;
 $mail->AddAddress($to);
