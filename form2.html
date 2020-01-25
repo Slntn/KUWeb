@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="webicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Cabinet Painting</title>
+</head>
+
+<body id="b2">
+   <div class="container">
+    <div class="row">
+      <div class="col-sm"></div>
+      <div class="col-md-6 panel">
+
+        <br>
+        <img src="./picture/logo.png" alt="Kitchen Update" class="col-sm-7 mx-auto d-block bg-secondary">
+        <br>
+        <h3 class="txt_center"><b>Request a call</b></h3>
+        <br>
+        
+        <form action="form2.php" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="First Name" name='fname' required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Last Name" name='lname' required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" name='email' required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Phone" name='phone' required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="City" name='city' required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Zip code" name='zip' required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Message" rows="3" name='msg' required></textarea>
+          </div>
+          <div class="form-group uploadBtn">
+            <label for="formControlFile1"><b>Upload photos</b></label>
+            <input type="file" class="form-control-file" id="formControlFile1" name='files[]' accept="image/x-png,image/jpeg" multiple>
+          </div>
+          <br>
+          <div class="uploadCtrBtn">
+            <button class="btn btn-secondary mb-2" onclick="history.back()">Cancel</button>
+            <button type="submit" class="btn btn-secondary mb-2">Send</button>  
+          </div>
+        </form>
+
+      </div>
+      <div class="col-sm"></div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+
+</body>
+</html>
