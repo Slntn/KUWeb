@@ -671,8 +671,66 @@ footer * {
 }
 
 .cust_block {
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 320px) {
+  .cust_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cust_block .s_pic {
+    width: 70%;
+    max-height: 150px;
+  }
+  .cust_block .fmiddle_pic {
+    display: none;
+  }
+  .cust_block .smiddle_pic {
+    width: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cust_block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cust_block .s_pic {
+    width: 40%;
+    max-height: 225px;
+  }
+  .cust_block .smiddle_pic {
+    display: none;
+  }
+  .cust_block .fmiddle_pic {
+    display: block;
+    width: 8%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .cust_block .s_pic {
+    max-height: 270px;
+  }
 }
 
 .ef:hover {
