@@ -34,6 +34,20 @@
     @include mainbackground;
 }
 
+#b2a {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/2.jpg");
+    @include mainbackground;
+    
+}
+
+#b3a {
+
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/3.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/3.jpg");
+        @include mainbackground;
+}
+
 #b2 {
     @include sm { background-color: black; }
     @include md { 
