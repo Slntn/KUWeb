@@ -191,7 +191,7 @@ footer{
     @include sm {
         @include m2;
         img {
-            width: 300px;
+            width: 200px;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
             margin-bottom: 30px;
         }  
@@ -209,7 +209,7 @@ footer{
     margin-top:1%;
     @include displayRow;
     img{
-        width: 20%;
+        width: 30%;
     }  
 }
 
@@ -317,9 +317,9 @@ footer{
 
 #kitch_get_quote_btn{
     margin-top: 5%;
-    @include sm{ img { width:200px; } }
-    @include md{ img { width:300px; } }
-    @include lg{ img { width:400px; } }
+    @include sm{ img { width:150px; } }
+    @include md{ img { width:200px; } }
+    @include lg{ img { width:300px; } }
 }
 
 
