@@ -2,7 +2,7 @@
 
 require_once './phpmailer/phpmailer.php';
 
-$to = "info@kitchen-update.com";
+$to = " cabinetpainting@kitchen-update.com";
 $subject = "Form Request";
 
 $fromName = $_POST['fname']; 
