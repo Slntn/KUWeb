@@ -140,14 +140,6 @@
   font-family: myFont1;
 }
 
-body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../picture/1.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/1.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 #b1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../picture/bckg/1.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/1.jpg");
@@ -156,20 +148,37 @@ body {
   background-attachment: fixed;
 }
 
-#b2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../picture/bckg/2.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+@media (min-width: 320px) {
+  #b2 {
+    background-color: black;
+  }
 }
 
-#b3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../picture/bckg/3.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+@media (min-width: 768px) {
+  #b2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../picture/bckg/2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 320px) {
+  #b3 {
+    background-color: black;
+  }
+}
+
+@media (min-width: 768px) {
+  #b3 {
+    background-color: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../picture/bckg/3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
 }
 
 #b4 {

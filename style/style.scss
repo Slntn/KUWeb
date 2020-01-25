@@ -27,11 +27,6 @@
 
 * { font-family: myFont1; }
 
-body{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/1.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/1.png");
-    @include mainbackground;  
-}
 
 #b1 {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/1.jpg");
@@ -40,15 +35,22 @@ body{
 }
 
 #b2 {
+    @include sm { background-color: black; }
+    @include md { 
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/2.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/2.jpg");
     @include mainbackground;
+    }
 }
 
 #b3 {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/3.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/3.jpg");
-    @include mainbackground;
+    @include sm { background-color: black; }
+    @include md { 
+        background-color: none; 
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/3.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/bckg/3.jpg");
+        @include mainbackground;
+    }
 }
 
 #b4 {
