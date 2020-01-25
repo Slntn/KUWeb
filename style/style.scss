@@ -223,7 +223,7 @@ footer{
             margin-top: 15px;
             
             text-align:center;
-            font-size: 17px;
+            font-size: 20px;
             span{
                 color: yellow;
                 font-family:myFont2;
@@ -243,7 +243,7 @@ footer{
         h1{
             margin-top: 20px;
             text-align:center;
-            font-size: 40px;
+            font-size: 45px;
             span{
                 color: yellow;
                 font-family:myFont2;
@@ -310,7 +310,7 @@ footer{
         span { color: $color_1; }
     }
 
-    @include sm{ h2 {font-size: 12px;}}
+    @include sm{ h2 {font-size: 17px;}}
     @include md{ h2 {font-size: 26px;}}
     @include lg{ h2 {font-size: 35px;}}
 }
@@ -486,5 +486,12 @@ footer{
         margin-left: 3%;
     }
     
+}
+
+.crutch{
+    @include sm{ max-height: 77px; }
+    @include md{ max-height: 300px; }
+    @include lg{ max-height: 320px; }
+    @include Xlg{ max-height: none; }
 }
 

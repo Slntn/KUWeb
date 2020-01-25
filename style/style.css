@@ -68,24 +68,26 @@
 #contact_icon {
   height: 10%;
   position: fixed;
-  bottom: 70%;
 }
 
 @media (min-width: 320px) {
   #contact_icon {
     left: 70%;
+    bottom: 70%;
   }
 }
 
 @media (min-width: 768px) {
   #contact_icon {
     left: 80%;
+    bottom: 80%;
   }
 }
 
 @media (min-width: 1024px) {
   #contact_icon {
     left: 85%;
+    bottom: 80%;
   }
 }
 
@@ -434,7 +436,7 @@ footer * {
   #kitchen_mdg h1 {
     margin-top: 15px;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
   }
   #kitchen_mdg h1 span {
     color: yellow;
@@ -454,7 +456,7 @@ footer * {
   #kitchen_mdg h1 {
     margin-top: 20px;
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
   }
   #kitchen_mdg h1 span {
     color: yellow;
@@ -526,7 +528,7 @@ footer * {
 
 @media (min-width: 320px) {
   #kitchen_mdg1 h2 {
-    font-size: 12px;
+    font-size: 17px;
   }
 }
 
@@ -757,5 +759,29 @@ footer * {
   width: 80px;
   margin-right: 3%;
   margin-left: 3%;
+}
+
+@media (min-width: 320px) {
+  .crutch {
+    max-height: 77px;
+  }
+}
+
+@media (min-width: 768px) {
+  .crutch {
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .crutch {
+    max-height: 320px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .crutch {
+    max-height: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

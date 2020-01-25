@@ -68,24 +68,26 @@
 #contact_icon {
   height: 10%;
   position: fixed;
-  bottom: 70%;
 }
 
 @media (min-width: 320px) {
   #contact_icon {
     left: 70%;
+    bottom: 70%;
   }
 }
 
 @media (min-width: 768px) {
   #contact_icon {
     left: 80%;
+    bottom: 80%;
   }
 }
 
 @media (min-width: 1024px) {
   #contact_icon {
     left: 85%;
+    bottom: 80%;
   }
 }
 

@@ -85,11 +85,20 @@ footer{
 #contact_icon{
     height: 10%;
     position: fixed;
-    bottom: 70%;
     
-    @include sm { left: 70%; }
-    @include md { left: 80%; }
-    @include lg { left: 85%; }
+    
+    @include sm { 
+        left: 70%; 
+        bottom: 70%;
+    }
+    @include md { 
+        left: 80%; 
+        bottom: 80%;
+    }
+    @include lg { 
+        left: 85%; 
+        bottom: 80%;
+    }
     @include Xlg {left: 87%; }
 }
 
