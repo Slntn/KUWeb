@@ -224,7 +224,6 @@ footer{
     display: flex;
     margin-top:1%;
     @include displayRow;
-
     @include sm{ img{ width: 45%; } }
     @include md{ img{ width: 25%; } }
     @include lg{ img{ width: 20%; } }
@@ -517,9 +516,31 @@ footer{
 } 
 
 /// form example
+.forms{
+    display: flex;
+    height: 100%;
+    @include sm{height: 100%;}
+    @include md{height: 100%;}
+    @include lg{height: 100vh;}
+    @include Xlg{height: 100vh;}
+}
+
+.empty_div{
+    @include sm{display: 2%;}
+    @include md{width: 10%;}
+    @include lg{width: 25%;}
+    @include Xlg{width: 30%;}
+    height: 100%;
+}
 .panel{
+    @include sm{width: 96%;}
+    @include md{width: 80%;}
+    @include lg{width: 50%;}
+    @include Xlg{width: 40%;}
     background: linear-gradient(rgba(252, 236, 10, 0.6));
-    height: 100vh;
+    height: 100%;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 .uploadBtn{
