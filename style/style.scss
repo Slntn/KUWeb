@@ -224,9 +224,10 @@ footer{
     display: flex;
     margin-top:1%;
     @include displayRow;
-    img{
-        width: 30%;
-    }  
+
+    @include sm{ img{ width: 45%; } }
+    @include md{ img{ width: 25%; } }
+    @include lg{ img{ width: 20%; } }
 }
 
 
