@@ -518,27 +518,53 @@ footer{
 /// form example
 .forms{
     display: flex;
-    height: 100%;
-    @include sm{height: 100%;}
-    @include md{height: 100%;}
-    @include lg{height: 100vh;}
-    @include Xlg{height: 100vh;}
+    flex-direction: row;
+ //   height: 100vh;
+
+ .spacer {
+    height: 70px;
+  }
 }
 
 .empty_div{
-    @include sm{display: 2%;}
-    @include md{width: 10%;}
-    @include lg{width: 25%;}
-    @include Xlg{width: 30%;}
-    height: 100%;
+    
+    @include sm{ 
+        width: 5%;
+        height: 100%;
+    }
+    @include md{ 
+        width: 20%;
+        height: 100%;
+    }
+    @include lg{ 
+        width: 25%;
+        height: 100%;
+    }
+    @include Xlg{
+        width: 30%;
+        height: 100%;
+    }
 }
 .panel{
-    @include sm{width: 96%;}
-    @include md{width: 80%;}
-    @include lg{width: 50%;}
-    @include Xlg{width: 40%;}
-    background: linear-gradient(rgba(252, 236, 10, 0.6));
     height: 100%;
+    @include sm{
+        width: 96%;
+        height: 100%;
+    }
+    @include md{ 
+        width: 60%;
+        height: 100%;
+    }
+    @include lg{
+        width: 50%;
+        height: 100%;
+    }
+    @include Xlg{
+        width: 40%;
+        height: 100%;
+    }
+
+    background: linear-gradient(rgba(252, 236, 10, 0.6));
     padding-left:15px;
     padding-right:15px;
 }

@@ -826,65 +826,48 @@ footer * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.forms .spacer {
+  height: 70px;
 }
 
 @media (min-width: 320px) {
-  .forms {
+  .empty_div {
+    width: 5%;
     height: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  .forms {
+  .empty_div {
+    width: 20%;
     height: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .forms {
-    height: 100vh;
-  }
-}
-
-@media (min-width: 1250px) {
-  .forms {
-    height: 100vh;
-  }
-}
-
-.empty_div {
-  height: 100%;
-}
-
-@media (min-width: 320px) {
-  .empty_div {
-    display: 2%;
-  }
-}
-
-@media (min-width: 768px) {
-  .empty_div {
-    width: 10%;
   }
 }
 
 @media (min-width: 1024px) {
   .empty_div {
     width: 25%;
+    height: 100%;
   }
 }
 
 @media (min-width: 1250px) {
   .empty_div {
     width: 30%;
+    height: 100%;
   }
 }
 
 .panel {
+  height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 236, 10, 0.6)));
   background: linear-gradient(rgba(252, 236, 10, 0.6));
-  height: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -892,24 +875,28 @@ footer * {
 @media (min-width: 320px) {
   .panel {
     width: 96%;
+    height: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .panel {
-    width: 80%;
+    width: 60%;
+    height: 100%;
   }
 }
 
 @media (min-width: 1024px) {
   .panel {
     width: 50%;
+    height: 100%;
   }
 }
 
 @media (min-width: 1250px) {
   .panel {
     width: 40%;
+    height: 100%;
   }
 }
 
